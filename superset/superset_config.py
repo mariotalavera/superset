@@ -1,5 +1,3 @@
-# superset_config.py
-
 # Your App secret key
 SECRET_KEY = "TXxWqZHAILwElJF2bKR8"
 
@@ -14,7 +12,7 @@ DEFAULT_FEATURE_FLAGS: Dict[str, bool] = {
     "ROW_LEVEL_SECURITY": True,
 }
 
-SUPERSET_WEBSERVER_PORT = 9099
+SUPERSET_WEBSERVER_PORT = 8088
 
 FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
 APP_ICON = "/static/assets/images/superset-logo-horiz.png"
@@ -56,3 +54,10 @@ LANGUAGES = {}
 # Default cache timeout (in seconds), applies to all cache backends unless
 # specifically overridden in each cache config.
 CACHE_DEFAULT_TIMEOUT = 60 * 60 * 24  # 1 day
+
+# The SQLAlchemy connection string.
+SQLALCHEMY_DATABASE_URI = 'mysql://root:Password1!@10.10.2.1/superset'
+
+# Requires on MySQL
+# CREATE USER 'superset'@'%' IDENTIFIED BY '8opNioe2ax1ndL';
+# GRANT ALL PRIVILEGES ON *.* TO 'superset'@'%' WITH GRANT OPTION;
