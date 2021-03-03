@@ -1,15 +1,16 @@
 # Customizing Superset For Mario
 
 ## Customizable Features, Scoped
-- [*] Fork Superset Project From Github
+
+- [ ] Fork Superset Project From Github
   - [*] Project Loc https://github.com/mariotalavera/superset
-  - [ ] A project can have 2 origins... note form Moses
-  - [ ] Bitbucket Loc
-- [*] Runs on Docker Compose
+  - [ ] Note from Moses - https://docs.github.com/en/github/using-git/adding-a-remote
+  - [ ] Bitbucket LOC - Pick loc on Bitbucket to host our version of Superset
+- [ ] Runs on Docker Compose
   - [*] Setup docker network to talk to mysql database
   - [*] Edit docker-compose.yml to use preexisting network
   - [ ] Change implementation for dev and for prod.
-- [ ] Change admin Password
+- [ ] Change admin password
 - [*] MySQL Connector
   - https://superset.apache.org/docs/databases/dockeradddrivers
   - ```bash
@@ -25,7 +26,7 @@
   - [*] SECRET_KEY
   - [ ] SQL_ALCHEMY_DATABASE_URI ... superset.db
   - [ ] Custom HTTP Port
-  - [ ] ROW_LEVEL_SECURITY=True
+  - [*] ROW_LEVEL_SECURITY=True
 - [ ] Branding
   - [ ] CSS
   - [ ] Images And Animations
@@ -47,12 +48,14 @@
 - [ ] Async If For Long Running Queries
 - [ ] CELERY_CONFIG
 - [ ] All REDIS Endpoint(s)
+  - Can leverage existing REDIS
+- [ ] MySQL 
+    - Can leverage existing MySQL
 - [ ] Configure Email
 - [ ] SQLite Metadata Won't Work In Cluster
 - [ ] SQLLab Async If Setting In DB Settings
 - [ ] Celery Flower Monitoring
 - [ ] Alerts & Reports
 - [ ] SQL Jinja Templates
-- [ ] DB Driver requirements.txt
 - [ ] Country Map Tools
 - [ ] Import / Export Log Data
