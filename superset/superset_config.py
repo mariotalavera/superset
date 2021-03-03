@@ -56,7 +56,7 @@ LANGUAGES = {}
 CACHE_DEFAULT_TIMEOUT = 60 * 60 * 24  # 1 day
 
 # The SQLAlchemy connection string.
-SQLALCHEMY_DATABASE_URI = 'mysql://root:Password1!@10.10.2.1/superset'
+# SQLALCHEMY_DATABASE_URI = 'mysql://superset:superset@10.10.2.1:3306/superset'
 
 # Requires on MySQL
 # CREATE USER 'superset'@'%' IDENTIFIED BY '8opNioe2ax1ndL';
