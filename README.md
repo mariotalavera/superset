@@ -32,8 +32,6 @@
 touch ./docker/requirements-local.txt
 echo "mysqlclient" >> ./docker/requirements-local.txt 
 echo "pymysql" >> ./docker/requirements-local.txt
-echo "mysqlclient" >> ./docker/requirements-local.txt
-echo "pymysql" >> ./docker/requirements-local.txt
 
 # from project
 docker-compose build --force-rm
