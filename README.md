@@ -14,20 +14,6 @@
   - [ ] Change implementation for dev and for prod. (Ops)
 
 - [ ] Change admin password
-
-- [*] MySQL Connector
-  - https://superset.apache.org/docs/databases/dockeradddrivers
-  - ```bash
-    # from superset_app
-    touch ./docker/requirements-local.txt
-    echo "mysqlclient" >> ./docker/requirements-local.txt 
-    echo "pymysql" >> ./docker/requirements-local.txt
-    echo "mysqlclient" >> ./docker/requirements-local.txt
-    echo "pymysql" >> ./docker/requirements-local.txt
-    
-    # from project
-    docker-compose build --force-rm
-    ```
 - [ ] superset_config.py
   - [*] SECRET_KEY
   - [ ] SQL_ALCHEMY_DATABASE_URI ... superset.db
@@ -38,6 +24,20 @@
   - [ ] Images And Animations
 - [ ] API
 - [ ] Do Not Install Examples On Prod
+
+- [*] MySQL Connector
+  - https://superset.apache.org/docs/databases/dockeradddrivers
+  ```bash
+    # from superset_app
+    touch ./docker/requirements-local.txt
+    echo "mysqlclient" >> ./docker/requirements-local.txt 
+    echo "pymysql" >> ./docker/requirements-local.txt
+    echo "mysqlclient" >> ./docker/requirements-local.txt
+    echo "pymysql" >> ./docker/requirements-local.txt
+    
+    # from project
+    docker-compose build --force-rm
+    ```
 
 ## Features, Additional Available
 - [ ] docker-compose -f docker-compose-non-dev.yml up (non dev mode)
