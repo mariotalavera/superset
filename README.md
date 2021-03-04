@@ -27,17 +27,17 @@
 
 - [*] MySQL Connector
   - https://superset.apache.org/docs/databases/dockeradddrivers
-  ```bash
-    # from superset_app
-    touch ./docker/requirements-local.txt
-    echo "mysqlclient" >> ./docker/requirements-local.txt 
-    echo "pymysql" >> ./docker/requirements-local.txt
-    echo "mysqlclient" >> ./docker/requirements-local.txt
-    echo "pymysql" >> ./docker/requirements-local.txt
-    
-    # from project
-    docker-compose build --force-rm
-    ```
+```bash
+# from superset_app
+touch ./docker/requirements-local.txt
+echo "mysqlclient" >> ./docker/requirements-local.txt 
+echo "pymysql" >> ./docker/requirements-local.txt
+echo "mysqlclient" >> ./docker/requirements-local.txt
+echo "pymysql" >> ./docker/requirements-local.txt
+
+# from project
+docker-compose build --force-rm
+```
 
 ## Features, Additional Available
 - [ ] docker-compose -f docker-compose-non-dev.yml up (non dev mode)
