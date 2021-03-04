@@ -2,7 +2,8 @@
 
 ## Features, Scoped/Customized
 
-...
+This is the customization we have so far.
+
 ## Version Control, Project Location
 
 - Location: https://bitbucket.org/tompkinsinc/superset.git
@@ -50,11 +51,13 @@ docker-compose up -d
 ## Change Default Admin Password
 
 **Tasks**
+
 - [ ] Change admin password
 
 ## Revise Branding
 
 **Tasks**
+
 - [ ] CSS
 - [ ] Images And Animations
 
